@@ -1,11 +1,12 @@
 import { HttpException } from '@nestjs/common';
-import countriesClient from 'src/clients/countries.client';
+import CountriesClient from 'src/commons/clients/countries.client';
 import logger from 'src/utils/logger.util';
 
 class CountriesService {
   async getAllCountries() {
     try {
       logger.info('CountriesService.getAllCountries');
+      const countriesClient = new CountriesClient();
       const result = countriesClient.getAllCountries();
       return result;
     } catch (error) {
