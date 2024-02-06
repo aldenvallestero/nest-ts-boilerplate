@@ -14,4 +14,4 @@ class CountriesClient extends AxiosClient {
   }
 }
 
-export default new CountriesClient();
+export default CountriesClient;
