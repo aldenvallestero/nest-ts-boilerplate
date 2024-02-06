@@ -11,4 +11,4 @@ class AxiosClient {
   }
 }
 
-export default new AxiosClient();
+export default AxiosClient;
