@@ -14,6 +14,11 @@ When creating a service, make sure that the entire flow is wrapped by an error h
 6. Start the development environment by running `npm run start:dev`
 
 ### 🌱 How seed works
-Seeding is crucial in the development phase to ensure all model execution processes work accordingly.
+Seeding is crucial during development phase to ensure all database models will be successfully executed according to its' schema and business requirements.
 
-Seeds are located under the Prisma directory called seeder.prisma.ts. It is a class-based service that has multiple methods based on the available collections declared in the Prisma schema, which are intended to perform document creation.
+In this repository, seeds are located under the Prisma directory called `seeder.prisma.ts`. It is a class-based service that has multiple methods based on the available collections declared in the Prisma schema, which are intended to perform data creation.
+
+![Prisma Graphics](/graphics/prisma-graphic.png)
+
+### △ Why Prisma
+Having an ORM to your application will help you define a safe structure of the database and eventually gives you detailed references of explaining how your database is structured.
